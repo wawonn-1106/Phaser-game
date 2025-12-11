@@ -82,7 +82,7 @@ class MyGameScene extends Phaser.Scene{
             {x:400,y:280,key:'enemy'},
             {x:500,y:280,key:'enemy'}
         ];
-//csvはゴミです！！！
+//！！
         enemyData.forEach(data=>{
             const enemy=this.enemyGroup.create(data.x,data.y,data.key);
             enemy.setVelocityX(-100);
@@ -164,5 +164,6 @@ const config={
     },
     scene:MyGameScene
 }
+
 
 const game=new Phaser.Game(config);
